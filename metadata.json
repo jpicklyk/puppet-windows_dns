@@ -1,0 +1,24 @@
+{
+  "author": "Jeff Picklyk",
+  "dependencies": [ 
+    {
+      "name": "puppetlabs/powershell",
+      "version_requirement": ">=1.0.2"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.2.1"
+    }],
+  "license": "Apache License, Version 2.0",
+  "name": "jeffzpicklyk-windows_dns",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Windows"
+    }],
+  "project_page": "",
+  "requirements": [],
+  "source": "",
+  "summary": "",
+  "tags": [],
+  "version": "0.1.0"
+}
