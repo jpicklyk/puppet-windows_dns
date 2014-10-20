@@ -15,10 +15,10 @@
     {
       "operatingsystem": "Windows"
     }],
-  "project_page": "",
+  "project_page": "https://github.com/jpicklyk/puppet-windows_dns",
   "requirements": [],
-  "source": "",
-  "summary": "",
+  "source": "https://github.com/jpicklyk/puppet-windows_dns",
+  "summary": "Module to configure DNS settings for Windows 2012 and 2012 R2",
   "tags": [],
   "version": "0.1.0"
 }
