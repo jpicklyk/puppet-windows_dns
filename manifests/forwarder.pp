@@ -3,7 +3,7 @@ define windows_dns::forwarder (
   $ipaddress     = $ipaddress, # Array of ip addresses
   $enablereorder = false,) {
   validate_re($ensure, '^(present|absent)$', 'Valid values for ensure are \'present\' or \'absent\'')
-  if ($kernel_ver =~ /^6\.2|^6\.3/) {
+  if ($kernelversion =~ /^6\.2|^6\.3/) {
     if ($enablereorder) {
       $flag = '$true'
     } else {

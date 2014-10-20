@@ -13,7 +13,7 @@ define windows_dns::zoneconfig (
     default => 'None'
   }
   
-  if ($kernel_ver =~ /^6\.2|^6\.3/) {
+  if ($kernelversion =~ /^6\.2|^6\.3/) {
     
     exec { "Set dynamic update":
       command  => "Set-DnsServerPrimaryZone -Name '${zonename}' -DynamicUpdate '${type}'",
