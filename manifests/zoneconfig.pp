@@ -17,7 +17,7 @@ define windows_dns::zoneconfig (
     
     exec { "Set dynamic update":
       command  => "Set-DnsServerPrimaryZone -Name '${zonename}' -DynamicUpdate '${type}'",
-      onlyif   => "\$zone = Get-WmiObject -Namespace 'root\\MicrosoftDNS' -Class 'MicrosoftDNS_Server';if(\$zone.AllowUpdate -ne ${dynamicupdate}){} else{exit 1}",
+      onlyif   => "\$zone = Get-WmiObject -Namespace 'root\\MicrosoftDNS' -Class 'MicrosoftDNS_Zone' | where {\$_.Name -eq \'${zonename}\'};if(\$zone.AllowUpdate -ne ${dynamicupdate}){} else{exit 1}",
       provider => powershell,
     }
    
